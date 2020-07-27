@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CodePen - SASS only - Random particles animation</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+  <link rel="stylesheet" href="main.css">
+
+</head>
+
+<body>
+  <h1 style = "color: #1c87c9;
+  position: relative;
+  top: 20px;
+  left: 60px;"
+     > &nbsp; &nbsp;&nbsp;&nbsp; Project Jay</h1>
+  <p style="
+    color: #3271ca;
+    position: absolute;
+    bottom: 50px;
+    right: 50px;">Designed by Naveen :)</p>
+  <div id="app-cover">
+    <div id="app" class="opened">
+      <form method="get" action="">
+        <div id="f-element">
+          <div id="inp-cover"><input type="text" id="myText" placeholder="Type something to search ..."
+              onkeyup="myFunction();convert1();convert2();convert3();" autocomplete="off" class="move-up"></div>
+        </div>
+        <button type="button" onclick="myFunction();convert1();convert2();convert3();" class=""><i
+            class="fas fa-search"></i></button>
+      </form>
+    </div>
+    <div id="layer" title="Click the blue area for some cool animations" class="sl"></div>
+    <div id="init"></div>
+  </div>
+
+  <br>
+  <div style="display: none;">
+    <p id="link1"></p>
+    <p id="link2"></p>
+    <p id="link3"></p>
+  </div>
+  <br>
+  <div></div>
+  <div class="button">
+    <h1>Zoho</h1>
+    <p id="converted_url1"></p>
+  </div>
+  <div class="button">
+    <h1>Pre Zoho</h1>
+    <p id="converted_url2"></p>
+  </div>
+  <div class="button">
+    <h1>ZCMS</h1>
+    <p id="converted_url3"></p>
+  </div>
+
+
+
+  <!-- partial:index.partial.html -->
+  <svg version='1.1' xmlns='http://www.w3.org/2000/svg'>
+    <defs>
+      <filter id='goo'>
+        <fegaussianblur in='SourceGraphic' result='blur' stddeviation='10'></fegaussianblur>
+        <fecolormatrix in='blur' mode='matrix' result='goo' values='1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7'>
+        </fecolormatrix>
+        <feblend in2='goo' in='SourceGraphic'></feblend>
+      </filter>
+    </defs>
+  </svg>
+  <span class='particle'></span>
+  <span class='particle'></span>
+  <span class='particle'></span>
+  <span class='particle'></span>
+  <span class='particle'></span>
+  <span class='particle'></span>
+  <span class='particle'></span>
+  <span class='particle'></span>
+  <span class='particle'></span>
+  <span class='particle'></span>
+  <span class='particle'></span>
+  <span class='particle'></span>
+  <span class='particle'></span>
+  <span class='particle'></span>
+  <span class='particle'></span>
+  <span class='particle'></span>
+  <span class='particle'></span>
+  <span class='particle'></span>
+  <span class='particle'></span>
+  <span class='particle'></span>
+  <span class='particle'></span>
+  <span class='particle'></span>
+  <span class='particle'></span>
+  <span class='particle'></span>
+  <span class='particle'></span>
+  <span class='particle'></span>
+  <span class='particle'></span>
+  <span class='particle'></span>
+  <span class='particle'></span>
+  <span class='particle'></span>
+  <span class='particle'></span>
+  <span class='particle'></span>
+  <span class='particle'></span>
+  <span class='particle'></span>
+  <span class='particle'></span>
+  <span class='particle'></span>
+  <span class='particle'></span>
+  <span class='particle'></span>
+  <span class='particle'></span>
+  <span class='particle'></span>
+  <span class='particle'></span>
+  <span class='particle'></span>
+  <span class='particle'></span>
+  <span class='particle'></span>
+  <span class='particle'></span>
+  <span class='particle'></span>
+  <span class='particle'></span>
+  <span class='particle'></span>
+  <span class='particle'></span>
+  <span class='particle'></span>
+  <span class='particle'></span>
+  <span class='particle'></span>
+  <span class='particle'></span>
+  <span class='particle'></span>
+  <span class='particle'></span>
+  <span class='particle'></span>
+  <span class='particle'></span>
+  <span class='particle'></span>
+  <span class='particle'></span>
+  <span class='particle'></span>
+  <span class='particle'></span>
+  <span class='particle'></span>
+  <span class='particle'></span>
+  <span class='particle'></span>
+  <span class='particle'></span>
+  <span class='particle'></span>
+  <span class='particle'></span>
+  <span class='particle'></span>
+  <span class='particle'></span>
+  <span class='particle'></span>
+  <span class='particle'></span>
+  <span class='particle'></span>
+  <span class='particle'></span>
+  <span class='particle'></span>
+  <span class='particle'></span>
+  <span class='particle'></span>
+  <span class='particle'></span>
+  <span class='particle'></span>
+  <span class='particle'></span>
+  <span class='particle'></span>
+  <span class='particle'></span>
+  <span class='particle'></span>
+  <span class='particle'></span>
+  <span class='particle'></span>
+  <span class='particle'></span>
+  <span class='particle'></span>
+  <span class='particle'></span>
+  <span class='particle'></span>
+  <span class='particle'></span>
+  <span class='particle'></span>
+  <span class='particle'></span>
+  <span class='particle'></span>
+  <span class='particle'></span>
+  <span class='particle'></span>
+  <span class='particle'></span>
+  <span class='particle'></span>
+  <span class='particle'></span>
+  <span class='particle'></span>
+  <span class='particle'></span>
+  <span class='particle'></span>
+  <span class='particle'></span>
+  <span class='particle'></span>
+  <span class='particle'></span>
+  <span class='particle'></span>
+  <span class='particle'></span>
+  <span class='particle'></span>
+  <span class='particle'></span>
+  <span class='particle'></span>
+  <span class='particle'></span>
+  <span class='particle'></span>
+  <span class='particle'></span>
+  <span class='particle'></span>
+  <span class='particle'></span>
+  <span class='particle'></span>
+  <span class='particle'></span>
+  <span class='particle'></span>
+  <span class='particle'></span>
+  <span class='particle'></span>
+  <span class='particle'></span>
+  <span class='particle'></span>
+  <span class='particle'></span>
+  <span class='particle'></span>
+  <span class='particle'></span>
+  <span class='particle'></span>
+  <span class='particle'></span>
+  <span class='particle'></span>
+  <span class='particle'></span>
+  <span class='particle'></span>
+  <span class='particle'></span>
+  <span class='particle'></span>
+  <span class='particle'></span>
+  <span class='particle'></span>
+  <span class='particle'></span>
+  <span class='particle'></span>
+  <span class='particle'></span>
+  <span class='particle'></span>
+  <span class='particle'></span>
+  <span class='particle'></span>
+  <span class='particle'></span>
+  <span class='particle'></span>
+  <span class='particle'></span>
+  <span class='particle'></span>
+  <span class='particle'></span>
+  <span class='particle'></span>
+  <span class='particle'></span>
+  <span class='particle'></span>
+  <span class='particle'></span>
+  <span class='particle'></span>
+  <span class='particle'></span>
+  <span class='particle'></span>
+  <span class='particle'></span>
+  <span class='particle'></span>
+  <span class='particle'></span>
+  <span class='particle'></span>
+  <span class='particle'></span>
+  <span class='particle'></span>
+  <span class='particle'></span>
+  <span class='particle'></span>
+  <span class='particle'></span>
+  <span class='particle'></span>
+  <span class='particle'></span>
+  <span class='particle'></span>
+  <span class='particle'></span>
+  <span class='particle'></span>
+  <span class='particle'></span>
+  <span class='particle'></span>
+  <span class='particle'></span>
+  <span class='particle'></span>
+  <span class='particle'></span>
+  <span class='particle'></span>
+  <span class='particle'></span>
+  <span class='particle'></span>
+  <span class='particle'></span>
+  <span class='particle'></span>
+  <span class='particle'></span>
+  <span class='particle'></span>
+  <span class='particle'></span>
+  <span class='particle'></span>
+  <span class='particle'></span>
+  <span class='particle'></span>
+  <span class='particle'></span>
+  <span class='particle'></span>
+  <span class='particle'></span>
+  <span class='particle'></span>
+  <span class='particle'></span>
+  <span class='particle'></span>
+  <span class='particle'></span>
+  <span class='particle'></span>
+  <span class='particle'></span>
+  <span class='particle'></span>
+  <span class='particle'></span>
+  <span class='particle'></span>
+  <span class='particle'></span>
+  <span class='particle'></span>
+  <span class='particle'></span>
+  <span class='particle'></span>
+  <span class='particle'></span>
+  <span class='particle'></span>
+  <span class='particle'></span>
+  <span class='particle'></span>
+  <!-- partial -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="main.js"></script>
+</body>
+
+</html>

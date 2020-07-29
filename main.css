@@ -30,14 +30,11 @@
     position: relative;
     left: 30px;
     color: #1d87c9;
-    display: inline-block;
-    margin-block-start: 30px;
-    height: 50px;
+    display: block;
     width: 400px;
     text-align: center;
     overflow-wrap: break-word;
     z-index: -1;
-}
 }
 h1{
     margin-block-start: auto;
